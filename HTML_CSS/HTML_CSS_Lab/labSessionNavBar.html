@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        margin: 0px;
+        text-align: right;
+        margin-right: 30px;
+      }
+      nav {
+        background-color: red;
+        padding: 15px;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: #817d7d;
+      }
+      .topnav a {
+        float: left;
+        color: #fff;
+        text-align: center;
+        padding: 8px 16px;
+      }
+      p {
+        margin: 0;
+        padding: 8px 16px;
+        color: #fff;
+        text-align: center;
+      }
+      .topnav a:hover {
+        background-color: black;
+        cursor: pointer;
+      }
+      p:hover {
+        background-color: black;
+        cursor: pointer;
+      }
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        float: none;
+        color: blue;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Demo of Dropdown</h1>
+    </nav>
+    <div class="topnav">
+      <a>Link 1</a>
+
+      <div class="dropdown">
+        <p>Link 2</p>
+        <div class="dropdown-content">
+          <a>DD_Link_1</a>
+          <a>DD_Link_2</a>
+          <a>DD_Link_3</a>
+        </div>
+      </div>
+
+      <a>Link 3</a>
+    </div>
+  </body>
+</html>

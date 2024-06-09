@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gmail Account Creation</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("./background.jpg") no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+      }
+
+      .form-container {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        border: 1px solid #ccc;
+        width: 300px;
+        text-align: center;
+      }
+      .buttons {
+        text-align: justify;
+      }
+      button {
+        color: azure;
+        background: mediumorchid;
+        margin-left: 20px;
+        border-radius: 4px;
+        margin-top: 15px;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+
+      .form-container input[type="text"],
+      .form-container input[type="email"],
+      .form-container input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      .form-container input[type="text"]:focus,
+      .form-container input[type="email"]:focus,
+      .form-container input[type="tel"]:focus {
+        background-color: rgba(70, 130, 180, 0.35);
+        outline: none;
+      }
+
+      h3 {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <h3>Create Gmail Account</h3>
+        <input type="text" name="fullname" placeholder="Full Name" required />
+        <input
+          type="tel"
+          name="contactnumber"
+          placeholder="Contact Number"
+          required
+        />
+        <input
+          type="email"
+          name="gmailid"
+          placeholder="Enter Gmail ID"
+          required
+        />
+        <div class="buttons">
+          <button>Reset</button>
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
