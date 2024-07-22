@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="lab-form.css">
+</head>
+<body>
+    <form action="#">
+        <section>
+            <aside id="image">
+                <img src="Images/Lab-Test/lab-test.jpg" alt="Lab-Pic">
+            </aside>
+            <div id="form_details">
+                <article class="user-details">
+                    <h2>1.Your Contact Details</h2>
+                    <input type="text" name="full-name" placeholder="Full Name" required/>
+                    <input type="number" name="id" placeholder="Patient Id if exists"/><br/>
+                    <input type="number" name="contact" placeholder="Contact Number" min="1111111111"
+                    max="9999999999" required/>
+                    <input type="email" name="email" placeholder="Email Id" required/>
+                </article>
+
+                <article class="user-details">
+                    <h2>2.Address</h2>
+                    <input type="text" name="house-no" placeholder="H-No" required />
+                        <input type="text" name="street" placeholder="Street" required /><br />
+                        <input type="text" name="area" placeholder="Area" required /> <br />
+                        <h3>District</h3>
+                        <select name="District" id="district" required>
+                            <option value="">Choose</option>
+                            <option value="district 1">District 1</option>
+                            <option value="district 2">District 2</option>
+                            <option value="district 3">District 3</option>
+                        </select>    
+                </article>
+
+                <article>
+                    <h2>3. Choose the Test type</h2>
+                        <p>Check atleast one box without fail</p>
+                        <input type="checkbox" id="c1" name="option1" value="CBC" />
+                        <label for="c1">CBC</label>
+                        <br />
+                        <input type="checkbox" id="c2" name="option2" value="Complete Urine" />
+                        <label for="c2">Complete Urine</label>
+                        <br />
+                        <input type="checkbox" id="c3" name="option3" value="Lipid Profile" />
+                        <label for="c3">Lipid Profile</label>
+                        <br />
+                        <input type="checkbox" id="c4" name="option4" value="TSH" />
+                        <label for="c4">Thyroid Stimulating Hormone(TSH)</label>
+                        <br />
+                        <input type="checkbox" id="c5" name="option5" value="Glucose Test" />
+                        <label for="c5">Glucose Test</label>
+                </article>
+
+                <article>
+                    <h2>4. Do you want a hard copy of the report also?</h2>
+                    <input type="radio" id="c6" name="option" value="True" required />
+                    <label for="c6">Yes</label>
+                    <br />
+                    <input type="radio" id="c7" name="option" value="False" />
+                    <label for="c7">No</label>
+                </article>
+
+                <article>
+                    <h2>5. Select Your Comfortable Date and Time</h2>
+                    <input type="datetime-local" value="datetime-local" required />
+                </article>
+            </div>
+        </section>
+                </br></br>
+                
+            <div id="buttons">
+                <button type="Reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+    </form>
+    
+</body>
+</html>
