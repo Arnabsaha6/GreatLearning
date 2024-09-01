@@ -1,0 +1,84 @@
+.movie-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details-container p {
+    padding: 10px;
+}
+
+.movie-poster {
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-info {
+    flex: 2 1 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-genres {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.movie-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.movie-actors {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.movie-release-date,
+.movie-rating {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .movie-details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-poster {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .movie-info {
+        align-items: center;
+    }
+
+    .movie-title {
+        text-align: center;
+    }
+
+    .movie-description,
+    .movie-actors,
+    .movie-release-date,
+    .movie-rating {
+        text-align: center;
+    }
+}
